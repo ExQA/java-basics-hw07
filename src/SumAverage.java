@@ -71,6 +71,14 @@ public class SumAverage {
    */
   public static double average(int[] numbers) {
     //  fill in code here using do-while loop and replace the return statement
-    return -1;
+    double sum = 0;
+    int count = 0;
+    do {
+      sum += numbers[count];
+      count ++;
+    }
+    while (count < numbers.length);
+
+    return sum / count;
   }
 }
